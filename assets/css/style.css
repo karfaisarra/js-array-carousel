@@ -1,17 +1,19 @@
-.my_container {
-    position: relative;
-    margin: auto;
-    width: 70%;
-}
 img {
     max-width: 100%;
-}  
-.my_slides{
+    height: 100vh;
+}
+.slides > img:not(img.active) {
     display: none;
 }
+.slides > img.active {
+    display: block;
+    position: relative;
+}
+  .thumbs > img {
+    width: calc(100% / 4);
+  }
 /* Next & previous buttons */
 .prev, .next {
-    cursor: pointer;
     position: absolute;
     right: 50%;
     width: auto;
@@ -19,16 +21,16 @@ img {
     font-weight: bold;
     font-size: 18px;
     padding: 0.25rem 0.5rem;
+    border-radius:50%;
+    background-color: transparent;
 }
 /* Position the "next button" to the bottom */
 .next {
     bottom: 0;
-    border-radius: 3px 0 0 3px;
   }
 /* Position the "prev button" to the top */
 .prev {
     top: 0px;
-    border-radius: 3px 0 0 3px;
 }
 /* On hover, add a gray background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -36,6 +38,3 @@ img {
     border-radius: 50%;
 }
   
-.active{
-    display: block;
-}
