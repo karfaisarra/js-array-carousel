@@ -1,0 +1,41 @@
+.my_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+img {
+    vertical-align: middle;
+}  
+.my_slides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.25rem 0.5rem;
+}
+/* Position the "next button" to the bottom */
+.next {
+    bottom: 0;
+    border-radius: 3px 0 0 3px;
+  }
+/* Position the "prev button" to the top */
+.prev {
+    top: 0px;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a gray background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+}
+  
+.active{
+    display: block;
+}
