@@ -9,9 +9,6 @@ img {
     display: block;
     position: relative;
 }
-  .thumbs > img {
-    width: calc(100% / 4);
-  }
 /* Next & previous buttons */
 .prev, .next {
     position: absolute;
